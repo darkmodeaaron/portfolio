@@ -1,0 +1,118 @@
+.intro {
+    margin-bottom: 26px;
+}
+
+.intro-sub {
+    margin-bottom: 85px;
+}
+
+.card-above {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 26px;
+}
+
+.aaaa {
+    margin-top: 60px;
+}
+
+.fig-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12px;
+}
+
+.fig-img-wrapper img {
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.card {
+    position: relative;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.card:hover .hovered-box {
+    opacity: 1;
+}
+
+.card:hover .hovered {
+    opacity: 0.1;
+}
+
+.card img {
+    width: 100%;
+    transition: opacity 150ms ease-in;
+}
+
+
+.hovered-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: 150ms ease-in;
+}
+
+.mobile-description {
+    display: none;
+}
+
+
+
+@media (max-width: 550px) {
+    
+    .mobile-description {
+        display: block;
+    }
+
+    .card-above {
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        transition: opacity 150ms ease-in;
+    }
+
+}
+
+
+@media (max-width: 460px) {
+
+    .fig-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10px;
+    }
+
+}
+
+// SWITCH BACK TO FULL WIDTH AT 350PX!!

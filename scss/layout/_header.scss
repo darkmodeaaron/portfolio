@@ -1,0 +1,48 @@
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.git-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5px;
+}
+
+.git-img-wrapper img {
+    height: 100%;
+}
+
+.mode-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5px;
+}
+
+.mode-img-wrapper img {
+    height: 100%;
+}
+
+@media (max-width: 460px) {
+
+    nav {
+        gap: 10px;
+    }
+    .git-img-wrapper {
+        height: 10px;
+    }
+    .mode-img-wrapper {
+        height: 10px;
+    }
+
+}
+
