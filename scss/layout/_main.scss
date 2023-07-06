@@ -41,6 +41,7 @@
     position: relative;
     max-height: 500px;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .card:hover .hovered-box {
@@ -124,6 +125,13 @@ button {
         margin-top: 40px;
     }
 
+    .card:hover .hovered {
+        opacity: 1;
+    }
+    
+    .card:hover .hovered-box {
+        opacity: 0;
+    }
 }
 
 
