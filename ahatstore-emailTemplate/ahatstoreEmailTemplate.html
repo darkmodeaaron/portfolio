@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ahatstore email template</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+</head>
+<style>
+
+    /* BOILERPLATE */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(248, 248, 248);
+    }
+    .template {
+        margin: 0 auto;
+        padding: 25px 0 0 0;
+        max-width: 600px;
+        background-color: white;
+    }
+
+    /* HEADER */
+
+    header h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .line {
+        margin: 0 auto 20px auto;
+        max-width: 500px;
+        height: 2px;
+        background-color: black;
+    }
+
+    .nav {
+        margin: 0 auto;
+        max-width: 450px;
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+    }
+    .nav a {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    header button {
+        margin-top: 40px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 0;
+        border-radius: 2px;
+        padding: 2px 10px;
+        font-size: 22.5px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    @media (max-width: 425px) {
+    
+        .template {
+            padding: 15px;
+        }
+        .nav a {
+            font-size: 10px;
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        header button {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+    }
+
+    @media (max-width: 290px) {
+        .nav a {
+        font-size: 7px;
+        }
+    }
+
+    /* MAIN */
+
+    .collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .collection h1 {
+        margin: 40px 0;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .images {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        max-width: 500px;
+    }
+
+    .img-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-wrapper img {
+        width: 90%;
+        border-radius: 5px;
+    }
+
+    .collection h2 {
+        margin: 40px 0 0 0;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+    @media (max-width: 385px) {
+    
+        .collection h1 {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 17.5px;
+            font-weight: 600;
+        }
+
+        .collection h2 {
+            margin: 20px 0 0 0;
+            font-size: 15px;
+        }
+
+    }
+
+@media (max-width: 290px) {
+    .nav a {
+    font-size: 7px;
+    }
+}
+
+    /* FOOTER */
+
+    footer {
+    margin-top: 40px;
+    padding: 35px;
+    font-size: 12.5px;
+    background-color: #F3F3F3;
+    color: black;
+    }
+
+    footer h4 {
+        font-weight: 300;
+    }
+
+    footer img {
+        height: 15px;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 385px) {
+
+    footer {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+}
+
+</style>
+<body>
+    <section class="template">
+        <header>
+            <h1>ahatstore.</h1>
+            <div class="line"></div>
+            <nav class="nav">
+                <a href="">Baseball</a>
+                <a href="">Bucket</a>
+                <a href="">Beanies</a>
+                <a href="">5 Panels</a>
+            </nav>
+            <button>SHOP NOW</button>
+        </header>
+        <main>
+            <section class="collection">
+                <h1>New Carhartt collection</h1>
+                <div class="images">
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/carhartt-black.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/carhartt-beige.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/carhartt-blue.png" alt="">
+                    </div>
+                </div>
+                <h2>Shop Carhartt now</h2>
+            </section>
+            <section class="collection">
+                <h1>New Polar collection</h1>
+                <div class="images">
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/polar-blue.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/polar-black.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/polar-brown.png" alt="">
+                    </div>
+                </div>
+                <h2>Shop Polar now</h2>
+            </section>
+            <section class="collection">
+                <h1>New Parlez collection</h1>
+                <div class="images">
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/parlez-black.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/parlez-blue.png" alt="">
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/parlez-grey.png" alt="">
+                    </div>
+                </div>
+                <h2>Shop Parlez now</h2>
+            </section>
+        </main>
+        <footer>
+            <h4>www.ahatstore.com</h4>
+            <div class="socials">
+                <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/twitter-xxl.png" alt="">
+                <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/instagram-xxl.png" alt="">
+                <img src="/ahatstore-emailTemplate/ahatstore-emailTemplate-images/facebook-3-xxl.png" alt="">
+            </div>
+            <h4>If you want to unsubscribe click <u>here</u>.</h4>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abikestore email template</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');</style>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        font-family: 'Inter', sans-serif;
+        background-color: black;
+    }
+
+    .template-wrapper {
+        background-color: #0D0D0E;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    header h1 {
+        padding: 10px;
+        font-size: 27.5px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        margin: 27.5px 0;
+    }
+
+    header h4 {
+        margin-bottom: 35px;
+        padding: 10px;
+        max-width: 275px;
+        font-size: 12px;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+
+    .header-img {
+        display: none;
+        background-image: url(/abiketore-emailTemplate/abikestore-emailTemplate-images/workshop.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 35px;
+        width: 100%;
+        height: 175px;
+    }
+
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 33px;
+    }
+
+    .card {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #232325;
+        border-radius: 5px;
+        padding: 7px;
+        flex-basis: 150px;
+
+    }
+
+    .card-header {
+        margin-bottom: 25px;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-info {
+        margin-bottom: 25px;
+        text-align: center;
+        color: white;
+        font-size: 12.5px;
+        font-weight: 300;
+    }
+
+    .card button {
+        border: 0;
+        border-radius: 2px;
+        padding: 2px 7px;
+        font-weight: 600;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin: 100px 0;
+    }
+
+    .feature {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 75%;
+
+    }
+
+    .feature-header {
+        color: white;
+        font-size: 22.5px;
+        font-weight: 500;
+    }
+    .feature-imgbg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 15px;
+        width: 75%;
+        background-color: #232325;
+    }
+    .feature-imgbg img {
+        width: 65%;
+    }
+    .feature-imgbg2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 75%;
+        background-color: #232325;
+    }
+    .feature-imgbg2 img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .feature-under {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+    }
+    .feature-des {
+        max-width: 200px;
+        font-size: 12.5px;
+        font-weight: 300;
+        color: white;
+    }
+    .feature-button {
+        border: 0;
+        border-radius: 2px;
+        padding: 5px 7px;
+        font-weight: 600;
+    }
+
+    footer {
+        padding: 35px;
+        font-size: 12.5px;
+        background-color: #232325;
+        color: white;
+    }
+
+    footer h4 {
+        font-weight: 300;
+    }
+
+    footer img {
+        height: 17.5px;
+        margin: 10px 0;
+    }
+
+
+    /* MEDIA QUERIES */
+
+
+    @media (max-width: 550px) {
+
+        .header-img {
+            display: block;
+        }
+        
+
+        .cards {
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            flex-basis: 75%;
+            justify-content: center;
+            padding: 15px;
+        }
+
+    }
+
+    @media (max-width: 375px) {
+
+        .header-img {
+            height: 125px;
+        }
+
+    }
+</style>
+<body>
+    <section class="template-wrapper">
+        <header>
+            <h1>abikestore</h1>
+            <h4>We are a  London based bicycle store supplying the finest quality equipment and consultation</h4>
+            <div class="header-img"> </div>
+        </header>
+        <main>
+            <section class="cards">
+                <div class="card">
+                    <h1 class="card-header">Store</h1>
+                    <h4 class="card-info">Discover our full range of bikes, bike parts and accessories</h4>
+                    <button>SHOP NOW</button>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Bike Services</h1>
+                    <h4 class="card-info">We offer in store repairs and installations for any bike </h4>
+                    <button>BOOK NOW</button>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Bike Repairs</h1>
+                    <h4 class="card-info">One of our specialists will help you to find a bike that fits you perfectly</h4>
+                    <button>BOOK NOW</button>
+                </div>
+            </section>
+            <section class="features">
+                <div class="feature">
+                    <h1 class="feature-header">Santafixie Frames</h1>
+                    <div class="feature-imgbg">
+                        <img src="/abiketore-emailTemplate/abikestore-emailTemplate-images/fixieframe.png" alt="">
+                    </div>
+                    <div class="feature-under">
+                        <h4 class="feature-des">Discover our full range of Santafixie frames</h4>
+                        <button class="feature-button">SHOP FRAMES</button>
+                    </div>
+                </div>
+                <div class="feature">
+                    <h1 class="feature-header">Shimano Pedals</h1>
+                    <div class="feature-imgbg">
+                        <img src="/abiketore-emailTemplate/abikestore-emailTemplate-images/shimanopedal.png" alt="">
+                    </div>
+                    <div class="feature-under">
+                        <h4 class="feature-des">Discover our full range of Shimano Peadals</h4>
+                        <button class="feature-button">SHOP PEDALS</button>
+                    </div>
+                </div>
+                <div class="feature">
+                    <h1 class="feature-header">Group Rides</h1>
+                    <div class="feature-imgbg2">
+                        <img class="group-img2" src="/abiketore-emailTemplate/abikestore-emailTemplate-images/groupride.png" alt="">
+                    </div>
+                    <div class="feature-under">
+                        <h4 class="feature-des">Join one of our group rides and meet up with new riders</h4>
+                        <button class="feature-button">MORE INFO</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4>www.abikestore.com</h4>
+            <div class="socials">
+                <img src="/abiketore-emailTemplate/abikestore-emailTemplate-images/twitter.png" alt="">
+                <img src="/abiketore-emailTemplate/abikestore-emailTemplate-images/instagram.png" alt="">
+                <img src="/abiketore-emailTemplate/abikestore-emailTemplate-images/facebook-3-xxl.png" alt="">
+            </div>
+            <h4>If you want to unsubscribe click <u>here</u>.</h4>
+        </footer>
+    </section>
+</body>
+</html>
