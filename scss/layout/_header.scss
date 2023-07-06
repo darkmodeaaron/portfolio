@@ -46,3 +46,17 @@ nav {
 
 }
 
+@media (max-width: 375px) {
+
+    nav {
+        gap: 10px;
+    }
+    .git-img-wrapper {
+        height: 9px;
+    }
+    .mode-img-wrapper {
+        height: 9px;
+    }
+
+}
+

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,7 +36,6 @@ a:visited {
 h4 {
     font-size: 15px;
     font-weight: 600;
-
     letter-spacing: 0.48px;
 }
 
@@ -50,10 +50,67 @@ strong {
     font-weight: 600;
 }
 
+input {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    color: black;
+    background-color: var(--wrapper);
+    border: 0;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+textarea {
+	resize: none;
+    height: 40px;
+	margin-bottom: 15px;
+	background-color: var(--wrapper);
+	border: 0;
+}
+
+button {
+	width: fit-content;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	background-color: var(--wrapper);
+	border: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+	color: var(--font);
+	cursor: pointer;
+}
+
+
 @media (max-width: 550px) {
+
     .wrapper {
         margin: 0 auto;
     }
+
+    header {
+        margin-bottom: 55px;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -64,14 +121,48 @@ strong {
 
     h4 {
         font-size: 12.5px;
+
+    }
+    
+    h5 {
+        font-size: 12.5px;
+
+    }
+    input, textarea {
+        font-size: 12.5px;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    a {
+        font-size: 9px;
+    }
+
+    h4 {
+        font-size: 9px;
         font-weight: 600;
         letter-spacing: 0.48px;
     }
     
     h5 {
-        font-size: 12.5px;
+        font-size: 9px;
         font-weight: 300;
+        line-height: 20px;
         letter-spacing: 0.48px;
+    }
+
+    input, textarea {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        font-size: 9px;
     }
 }
 
