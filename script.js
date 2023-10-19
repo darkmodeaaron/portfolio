@@ -4,6 +4,11 @@ const git = document.querySelectorAll('.git')
 const fig = document.querySelectorAll('.fig')
 const img = document.querySelectorAll('.hovered')
 
+const wrapper = document.querySelector('.wrapper')
+
+const cvLink = document.querySelector('.cvLink')
+
+let darkmode = false
 
 modeWrapper.addEventListener('click', () => {
       
@@ -42,5 +47,51 @@ modeWrapper.addEventListener('click', () => {
         })
 
     }
+
+    if (darkmode == false) {
+        cvLink.href = '/Aaron Roberts CV Dark.pdf'
+        darkmode = true
+    } else if (darkmode == true) {
+        cvLink.href = '/Aaron Roberts CV.pdf'
+        darkmode = false
+    }
       
+})
+
+
+const mobileCard = document.querySelector('.mobileCard')
+const mobileDetailsContainer = document.querySelector('.mobileDetails-container')
+
+
+
+
+mobileCard.addEventListener('click', () => {
+
+    mobileDetailsContainer.classList.toggle('active')
+
+    if (document.body.style.overflow == 'hidden') {
+        document.body.style.overflow = 'scroll'
+    } else {
+        document.body.style.overflow = 'hidden'
+    }
+
+})
+
+
+const mobileCard2 = document.querySelector('.mobileCard2')
+const mobileDetailsContainer2 = document.querySelector('.mobileDetails-container2')
+
+
+
+
+mobileCard2.addEventListener('click', () => {
+    
+    mobileDetailsContainer2.classList.toggle('active')
+
+    if (document.body.style.overflow == 'hidden') {
+        document.body.style.overflow = 'scroll'
+    } else {
+        document.body.style.overflow = 'hidden'
+    }
+
 })

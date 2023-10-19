@@ -1,20 +1,16 @@
 .intro {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 .intro-sub {
-    margin-bottom: 85px;
+    margin-bottom: 55px;
 }
 
 .card-above {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 26px;
-}
-
-.aaaa {
-    margin-top: 60px;
+    margin-bottom: 15px;
 }
 
 .fig-img-wrapper {
@@ -32,16 +28,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     max-width: 100%;
     max-height: 500px;
 }
 
 .card {
     position: relative;
-    max-height: 500px;
-    max-width: 100%;
     cursor: pointer;
+    flex: 1;
+    max-height: 100%;
 }
 
 .card:hover .hovered-box {
@@ -52,12 +48,19 @@
     opacity: 0.1;
 }
 
+.learningsCard {
+    gap: 0;
+}
+
+.abikestoreAbove {
+    margin-top: 30px;
+}
+
 .card img {
     width: 100%;
     transition: opacity 150ms ease-in;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
 }
-
 
 .hovered-box {
     position: absolute;
@@ -66,6 +69,14 @@
     transform: translateX(-50%) translateY(-50%);
     opacity: 0;
     transition: 150ms ease-in;
+    width: 450px;
+}
+
+.hovered-box h4 {
+    margin-bottom: 10px;
+}
+.hovered-box h5:first-of-type {
+    margin-bottom: 25px;
 }
 
 .mobile-description {
@@ -73,85 +84,139 @@
 }
 
 .outro {
-    margin-top: 30px;
+    margin-top: 45px;
     color: var(--font);
+    margin-bottom: 30px;
 }
 
 
+.contactMeLow {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .48px;
+    color: var(--font);
+    text-align: center;
+}
 
-.form {
-	display: flex;
-	flex-direction: column;
-	margin-top: 15px;
-	margin-bottom: 25px;
+.mobileCard {
+    display: none;
+}
+
+.mobileDetails-container {
+    display: none;
+}
+
+.mobileCard2 {
+    display: none;
+}
+
+.mobileDetails-container2 {
+    display: none;
 }
 
 
-button {
-	width: fit-content;
-	text-decoration: underline;
-	text-underline-offset: 2px;
-	background-color: var(--wrapper);
-	border: 0;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 22.5px;
-	letter-spacing: 1px;
-	color: var(--font-colour);
-	cursor: pointer;
+@media (max-width: 815px) {
+
+    .contactMeLow {
+        display: none;
+    }
+    .fig-img-wrapper {
+        display: none;
+    }
+    .gitMain {
+        display: none !important;
+    }
+    .cards {
+        display: none;
+    }
+    .mobileCard {
+        max-width: 1000px;
+        display: block;
+    }
+    .mobileCard2 {
+        max-width: 1000px;
+        display: block;
+    }
+    .mobileCard-img {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+        cursor: pointer;
+    }
+    .mobileDetails-container {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--wrapper);
+        padding: 15px 15px;
+        z-index: 100;
+    }
+    .mobileDetails-container2 {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--wrapper);
+        padding: 15px 15px;
+        z-index: 100;
+    }
+    .mobileDetails-container.active {
+        display: block;
+    }
+    .mobileDetails-container2.active {
+        display: block;
+    }
+    .mobileDetails {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        padding: 0 50px;
+    }
+    .mobileDetails h4 {
+        margin-bottom: 10px;
+    }
+    .mobileDetails h5 {
+        margin-bottom: 25px;
+    }
+
 }
+
 
 @media (max-width: 550px) {
 
     .intro {
         margin-bottom: 16px;
     }
-
     .intro-sub {
         margin-bottom: 55px;
     }
-
     .card-above {
         gap: 15px;
         margin-bottom: 7.5px;
     }
-    
     .mobile-description {
         display: block;
-        margin-bottom: 3pxpx;
+        margin-bottom: 5px;
     }
-
-    .aaaa {
-        margin-top: 40px;
-    }
-
     .card:hover .hovered {
         opacity: 1;
     }
-    
     .card:hover .hovered-box {
         opacity: 0;
     }
-}
-
-
-@media (max-width: 460px) {
-
-    .fig-img-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10px;
+    .hovered-box {
+        display: none;
     }
-
 }
+
 
 @media (max-width: 375px) {
-    .fig-img-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 9px;
+
+    .contactMeLow {
+        font-size: 12.5px;
     }
 
 }
@@ -160,3 +225,22 @@ button {
 
 
 // SWITCH BACK TO FULL WIDTH AT 350PX!!
+
+
+.exit-wrapper {
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.exit-wrapper img {
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+.details-header {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}

@@ -9,17 +9,19 @@ body {
     background-color: var(--body);
     font-family: 'Montserrat', sans-serif;
     color: var(--font);
+    padding: 0 100px;
+    overflow: scroll;
 }
 
 .wrapper {
     margin: 100px auto 0 auto;
-    padding: 15px;
+    padding: 15px 15px 45px 15px;
     max-width: 750px;
     background-color: var(--wrapper);
 }
 
 header {
-    margin-bottom: 85px;
+    margin-bottom: 55px;
 }
 
 a {
@@ -44,6 +46,12 @@ h5 {
     font-weight: 300;
     line-height: 25px;
     letter-spacing: 0.48px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 strong {
@@ -83,7 +91,7 @@ input:focus, textarea:focus {
 textarea {
 	resize: none;
     height: 40px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	background-color: var(--wrapper);
 	border: 0;
 }
@@ -103,33 +111,24 @@ button {
 	cursor: pointer;
 }
 
-@media (max-width: 550px) {
-
+@media (max-width: 815px) {
+    body {
+        padding: 0;
+    }
     .wrapper {
         margin: 0 auto;
     }
+}
 
+@media (max-width: 550px) {
     header {
         margin-bottom: 55px;
     }
-
 }
 
 @media (max-width: 460px) {
 
-    a {
-        font-size: 12.5px;
-    }
 
-    h4 {
-        font-size: 12.5px;
-
-    }
-    
-    h5 {
-        font-size: 12.5px;
-
-    }
     input, textarea {
         font-size: 12.5px;
     }
@@ -143,17 +142,17 @@ button {
 @media (max-width: 375px) {
 
     a {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     h4 {
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.48px;
     }
     
     h5 {
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 300;
         line-height: 20px;
         letter-spacing: 0.48px;
