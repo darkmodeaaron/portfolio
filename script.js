@@ -95,3 +95,22 @@ mobileCard2.addEventListener('click', () => {
     }
 
 })
+
+
+const mobileCard3 = document.querySelector('.mobileCard3')
+const mobileDetailsContainer3 = document.querySelector('.mobileDetails-container3')
+
+
+
+
+mobileCard3.addEventListener('click', () => {
+    
+    mobileDetailsContainer3.classList.toggle('active')
+
+    if (document.body.style.overflow == 'hidden') {
+        document.body.style.overflow = 'scroll'
+    } else {
+        document.body.style.overflow = 'hidden'
+    }
+
+})
