@@ -1,116 +1,78 @@
-const modeWrapper = document.querySelector('.mode-img-wrapper')
-const mode = document.querySelector('.mode')
-const git = document.querySelectorAll('.git')
-const fig = document.querySelectorAll('.fig')
-const img = document.querySelectorAll('.hovered')
+const modeBtn = document.querySelectorAll('.mode-svg')
+const htmlSkill = document.querySelector('.html-skill')
+const cssSkill = document.querySelector('.css-skill')
+const sassSkill = document.querySelector('.sass-skill')
+const jsSkill = document.querySelector('.js-skill')
+const reactSkill = document.querySelector('.react-skill')
 
-const wrapper = document.querySelector('.wrapper')
+const figma = document.querySelectorAll('.fig')
 
-const cvLink = document.querySelector('.cvLink')
+const mode = document.querySelector('.fill')
 
-let darkmode = false
-
-modeWrapper.addEventListener('click', () => {
-      
-      document.body.classList.toggle('darkmode')
-
-    if (document.body.classList.toggle('active')) {
-
-        git.forEach(gitimg => {
-            gitimg.src = "./images/git-img-dark.png"
-        })
-
-        mode.src = "./images/modeDark.png"
-
-        fig.forEach(figimg => {
-            figimg.src = "./images/fig-img-dark.png"
-        })
-
-        img.forEach(img => {
-            img.style.boxShadow = "rgba(255, 255, 255, 0.10) 0px 3px 8px"
-        })
-
-    } else {
-
-        git.forEach(gitimg => {
-            gitimg.src = "./images/git-img-light.png"
-        })
-
-        mode.src = "./images/modeLight.png"
-
-        fig.forEach(figimg => {
-            figimg.src = "./images/fig-img-light.png"
-        })
-
-        img.forEach(img => {
-            img.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px"
-        })
-
-    }
-
-    if (darkmode == false) {
-        cvLink.href = '/Aaron Roberts CV Dark.pdf'
-        darkmode = true
-    } else if (darkmode == true) {
-        cvLink.href = '/Aaron Roberts CV.pdf'
-        darkmode = false
-    }
-      
-})
-
-
-const mobileCard = document.querySelector('.mobileCard')
-const mobileDetailsContainer = document.querySelector('.mobileDetails-container')
-
-
-
-
-mobileCard.addEventListener('click', () => {
-
-    mobileDetailsContainer.classList.toggle('active')
-
-    if (document.body.style.overflow == 'hidden') {
-        document.body.style.overflow = 'scroll'
-    } else {
-        document.body.style.overflow = 'hidden'
-    }
-
-})
-
-
-const mobileCard2 = document.querySelector('.mobileCard2')
-const mobileDetailsContainer2 = document.querySelector('.mobileDetails-container2')
-
-
-
-
-mobileCard2.addEventListener('click', () => {
+modeBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('darkmode')
     
-    mobileDetailsContainer2.classList.toggle('active')
-
-    if (document.body.style.overflow == 'hidden') {
-        document.body.style.overflow = 'scroll'
-    } else {
-        document.body.style.overflow = 'hidden'
-    }
-
+        if (document.body.classList.contains('darkmode')) {
+            htmlSkill.src = '/images/htmldark.png'
+            cssSkill.src = '/images/cssdark.png'
+            sassSkill.src = '/images/sassdark.png'
+            jsSkill.src = '/images/jsdark.png'
+            reactSkill.src = '/images/reactdark.png'
+    
+            figma.forEach(fig => {
+                fig.src = "/images/figmadark.png"
+            })
+        } else {
+            htmlSkill.src = '/images/html.png'
+            cssSkill.src = '/images/css.png'
+            sassSkill.src = '/images/sass.png'
+            jsSkill.src = '/images/js.png'
+            reactSkill.src = '/images/react.png'
+    
+            figma.forEach(fig => {
+                fig.src = "/images/figmalight.png"
+            })
+        }
+    
+        mode.classList.toggle('active')
+    
+    })
 })
 
 
-const mobileCard3 = document.querySelector('.mobileCard3')
-const mobileDetailsContainer3 = document.querySelector('.mobileDetails-container3')
+const learningsDetails = document.querySelector('.learnings-details')
+const learningsMobileCard = document.querySelector('.learnings-mobile-card')
+
+learningsDetails.addEventListener('click', () => {
+    learningsMobileCard.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+})
+
+const acsDetails = document.querySelector('.acs-details')
+const acsMobileCard = document.querySelector('.acs-mobile-card')
+
+acsDetails.addEventListener('click', () => {
+    acsMobileCard.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+})
+
+const sizecompDetails = document.querySelector('.sizecomp-details')
+const sizecompMobileCard = document.querySelector('.sizecomp-mobile-card')
+
+sizecompDetails.addEventListener('click', () => {
+    sizecompMobileCard.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+})
 
 
+const exitCardBtn = document.querySelectorAll('.exit-wrapper')
 
-
-mobileCard3.addEventListener('click', () => {
-    
-    mobileDetailsContainer3.classList.toggle('active')
-
-    if (document.body.style.overflow == 'hidden') {
+exitCardBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        learningsMobileCard.style.display = 'none'
+        acsMobileCard.style.display = 'none'
+        sizecompMobileCard.style.display = 'none'
         document.body.style.overflow = 'scroll'
-    } else {
-        document.body.style.overflow = 'hidden'
-    }
-
+    })
 })

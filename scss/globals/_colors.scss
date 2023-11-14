@@ -1,13 +1,21 @@
 :root {
     --body: white;
-    --wrapper: #f5f5f5;
+    --wrapper: #fefefe;
     --font: black;
+    --navFont: #fff;
     --mode: #7C8BDC;
+    --shadow: rgb(230, 230, 230);
+    --gitdark: black;
+    --gitlight: #fff;
 }
 
 .darkmode {
     --body: black;
     --wrapper: #161616;
-    --font: #ffffff;
-    --mode: #a95eea;
+    --font: #cbcbcb;
+    --navFont: #cbcbcb;
+    --mode: #855BDE;
+    --shadow: rgb(70, 70, 70);
+    --gitdark: #cbcbcb;
+    --gitlight: #cbcbcb;
 }
