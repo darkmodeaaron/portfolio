@@ -192,23 +192,16 @@ body {
         margin: 0 auto;
         
     }
-    .three-wrapper {
+    .wrapper {
         padding: 100px 100px 0 100px;
     }
 }
 
 @media (max-width: 800px) {
-    .three-wrapper {
+    .wrapper {
         padding: 0;
     }
-    .header-contact {
-        position: fixed;
-        bottom: 55px;
-        background-color: var(--mode);
-        right: 50%;
-        transform: translateX(50%);
-        padding: 0 5px;
-    }
+    
     .tp {
         opacity: 0;
     }

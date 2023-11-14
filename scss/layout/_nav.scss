@@ -17,4 +17,9 @@ nav {
     transition: all 100ms ease-in-out;
 }
 
-
+.contact-github-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    z-index: 5;
+}

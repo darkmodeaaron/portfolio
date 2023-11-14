@@ -5,9 +5,15 @@ const sassSkill = document.querySelector('.sass-skill')
 const jsSkill = document.querySelector('.js-skill')
 const reactSkill = document.querySelector('.react-skill')
 
-const figma = document.querySelectorAll('.fig')
+const figma = document.querySelectorAll('.figma-icon')
 
-const mode = document.querySelector('.fill')
+const mode = document.querySelector('.mode-fill')
+
+const exitCardBtn = document.querySelectorAll('.exit-wrapper')
+
+const exitBtn = document.querySelectorAll('.exitBtn')
+
+
 
 modeBtn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -23,6 +29,12 @@ modeBtn.forEach(btn => {
             figma.forEach(fig => {
                 fig.src = "/images/figmadark.png"
             })
+
+            exitBtn.forEach(btn => {
+                btn.src = "/images/adddark.png"
+            })
+
+
         } else {
             htmlSkill.src = '/images/html.png'
             cssSkill.src = '/images/css.png'
@@ -32,6 +44,10 @@ modeBtn.forEach(btn => {
     
             figma.forEach(fig => {
                 fig.src = "/images/figmalight.png"
+            })
+
+            exitCardBtn.forEach(btn => {
+                btn.src = "/images/addlight.png"
             })
         }
     
@@ -66,7 +82,7 @@ sizecompDetails.addEventListener('click', () => {
 })
 
 
-const exitCardBtn = document.querySelectorAll('.exit-wrapper')
+
 
 exitCardBtn.forEach(btn => {
     btn.addEventListener('click', () => {

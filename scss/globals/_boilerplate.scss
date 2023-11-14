@@ -6,7 +6,7 @@
     color: var(--font);
 }
 
-.three-wrapper {
+.wrapper {
     padding-top: 100px;
     display: flex;
     max-width: 1800px;
@@ -52,39 +52,32 @@ h5 {
 
 ::selection {
     background: var(--mode); /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
+}
+::-moz-selection {
     background: var(--mode); /* Gecko Browsers */
-  }
+}
 
-  a {
+a {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
     color: inherit;
-  }
-
-.to {
-    transition: all 100ms ease-in-out;
 }
+
+
 
 .gitdark {
     fill: var(--gitdark);
+    transition: all 100ms ease-in-out;
 }
 
 .gitlight {
     fill: var(--gitlight);
-}
-
-.fig {
     transition: all 100ms ease-in-out;
 }
 
-.contact-github-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    z-index: 5;
+.figma-icon {
+    transition: all 100ms ease-in-out;
 }
 
 .mode-svg {
@@ -94,7 +87,7 @@ h5 {
     cursor: pointer;
 }
 
-.fill {
+.mode-fill {
     fill: var(--mode);
     transition: all 100ms ease-in-out;
 }
