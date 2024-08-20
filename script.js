@@ -13,6 +13,8 @@ const exitCardBtn = document.querySelectorAll('.exit-wrapper')
 
 const exitBtn = document.querySelectorAll('.exitBtn')
 
+const learningsImg = document.querySelector('.learningsImg')
+
 
 
 modeBtn.forEach(btn => {
@@ -25,6 +27,7 @@ modeBtn.forEach(btn => {
             sassSkill.src = '/images/sassdark.png'
             jsSkill.src = '/images/jsdark.png'
             reactSkill.src = '/images/reactdark.png'
+            learningsImg.src = '/images/learningsDarkImg.png'
     
             figma.forEach(fig => {
                 fig.src = "/images/figmadark.png"
@@ -41,6 +44,7 @@ modeBtn.forEach(btn => {
             sassSkill.src = '/images/sass.png'
             jsSkill.src = '/images/js.png'
             reactSkill.src = '/images/react.png'
+            learningsImg.src = '/images/learningsImg.png'
     
             figma.forEach(fig => {
                 fig.src = "/images/figmalight.png"
@@ -81,6 +85,14 @@ sizecompDetails.addEventListener('click', () => {
     document.body.style.overflow = 'hidden'
 })
 
+const sizecompDetails2 = document.querySelector('.sizecomp-details2')
+const sizecompMobileCard2 = document.querySelector('.sizecomp-mobile-card2')
+
+sizecompDetails2.addEventListener('click', () => {
+    sizecompMobileCard2.style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+})
+
 
 
 
@@ -89,6 +101,7 @@ exitCardBtn.forEach(btn => {
         learningsMobileCard.style.display = 'none'
         acsMobileCard.style.display = 'none'
         sizecompMobileCard.style.display = 'none'
+        sizecompMobileCard2.style.display = 'none'
         document.body.style.overflow = 'scroll'
     })
 })
