@@ -4,6 +4,7 @@ const cssSkill = document.querySelector('.css-skill')
 const sassSkill = document.querySelector('.sass-skill')
 const jsSkill = document.querySelector('.js-skill')
 const reactSkill = document.querySelector('.react-skill')
+const tailwindSkill = document.querySelector('.tailwind-skill')
 
 const figma = document.querySelectorAll('.figma-icon')
 
@@ -22,36 +23,38 @@ modeBtn.forEach(btn => {
         document.body.classList.toggle('darkmode')
     
         if (document.body.classList.contains('darkmode')) {
-            htmlSkill.src = '/images/htmldark.png'
-            cssSkill.src = '/images/cssdark.png'
-            sassSkill.src = '/images/sassdark.png'
-            jsSkill.src = '/images/jsdark.png'
-            reactSkill.src = '/images/reactdark.png'
+            htmlSkill.src = '/images/icons/htmldark.png'
+            cssSkill.src = '/images/icons/cssdark.png'
+            sassSkill.src = '/images/icons/sassdark.png'
+            jsSkill.src = '/images/icons/jsdark.png'
+            reactSkill.src = '/images/icons/reactdark.png'
+            tailwindSkill.src = '/images/icons/tailwinddark.png'
             learningsImg.src = '/images/learningsDarkImg.png'
     
             figma.forEach(fig => {
-                fig.src = "/images/figmadark.png"
+                fig.src = "/images/icons/figmadark.png"
             })
 
             exitBtn.forEach(btn => {
-                btn.src = "/images/adddark.png"
+                btn.src = "/images/icons/adddark.png"
             })
 
 
         } else {
-            htmlSkill.src = '/images/html.png'
-            cssSkill.src = '/images/css.png'
-            sassSkill.src = '/images/sass.png'
-            jsSkill.src = '/images/js.png'
-            reactSkill.src = '/images/react.png'
+            htmlSkill.src = '/images/icons/html.png'
+            cssSkill.src = '/images/icons/css.png'
+            sassSkill.src = '/images/icons/sass.png'
+            jsSkill.src = '/images/icons/js.png'
+            reactSkill.src = '/images/icons/react.png'
+            tailwindSkill.src = '/images/icons/tailwind.png'
             learningsImg.src = '/images/learningsImg.png'
     
             figma.forEach(fig => {
-                fig.src = "/images/figmalight.png"
+                fig.src = "/images/icons/figmalight.png"
             })
 
             exitCardBtn.forEach(btn => {
-                btn.src = "/images/addlight.png"
+                btn.src = "/images/icons/addlight.png"
             })
         }
     
@@ -77,19 +80,11 @@ acsDetails.addEventListener('click', () => {
     document.body.style.overflow = 'hidden'
 })
 
-const sizecompDetails = document.querySelector('.sizecomp-details')
-const sizecompMobileCard = document.querySelector('.sizecomp-mobile-card')
+const audio42Details = document.querySelector('.audeio42-details')
+const audio42MobileCard = document.querySelector('.audio42-mobile-card')
 
-sizecompDetails.addEventListener('click', () => {
-    sizecompMobileCard.style.display = 'flex'
-    document.body.style.overflow = 'hidden'
-})
-
-const sizecompDetails2 = document.querySelector('.sizecomp-details2')
-const sizecompMobileCard2 = document.querySelector('.sizecomp-mobile-card2')
-
-sizecompDetails2.addEventListener('click', () => {
-    sizecompMobileCard2.style.display = 'flex'
+audio42Details.addEventListener('click', () => {
+    audio42MobileCard.style.display = 'flex'
     document.body.style.overflow = 'hidden'
 })
 
@@ -100,6 +95,7 @@ exitCardBtn.forEach(btn => {
     btn.addEventListener('click', () => {
         learningsMobileCard.style.display = 'none'
         acsMobileCard.style.display = 'none'
+        audio42MobileCard.style.display = 'none'
         sizecompMobileCard.style.display = 'none'
         sizecompMobileCard2.style.display = 'none'
         document.body.style.overflow = 'scroll'

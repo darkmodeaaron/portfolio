@@ -72,13 +72,16 @@ a {
 
 
 .gitdark {
-    fill: var(--gitdark);
+    fill: var(--font);
     transition: all 100ms ease-in-out;
 }
 
 .gitlight {
-    fill: var(--gitlight);
+    fill: var(--font);
     transition: all 100ms ease-in-out;
+}
+.gitlightfirst {
+    fill: var(--mode);
 }
 
 .figma-icon {
@@ -86,7 +89,7 @@ a {
 }
 
 .mode-svg {
-    background-color: var(--navFont);
+
     border-radius: 50%;
     padding: 1px;
     cursor: pointer;

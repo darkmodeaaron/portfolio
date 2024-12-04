@@ -21,8 +21,15 @@ body {
     }
 
     &-intro {
-        margin-bottom: 125px;
+        margin-bottom: 15px;
         line-height: 25px;
+    }
+
+    &-skills {
+        margin-bottom: 125px;
+    }
+    &-skills-text {
+        margin-bottom: 8px;
     }
 
     &-skill {
@@ -76,9 +83,15 @@ body {
     &-contact {
         font-weight: 500;
         z-index: 5;
-        color: var(--navFont);
+        color: var(--mode);
+        border: 2px solid var(--mode);
         border-radius: 3px;
         transition: all 100ms ease-in-out;
+        padding: 1px 5px;
+    }
+    &-contact:active {
+        background-color: var(--mode);
+        color: var(--wrapper)
     }
 
 }
@@ -242,14 +255,43 @@ body {
 }
 
 .contactme-inline {
-    background-color: var(--mode);
-    color: var(--navFont);
+    background-color: var(--wrapper);
+    color: var(--mode);
     border-radius: 3px;
-    padding: 0 5px;
     font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+.contactme-inline:active {
+    background-color: var(--mode);
+    color: var(--wrapper)
+}
+
+.main-skills-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(-9px);
+    row-gap: 5px;
+}
+
+.skill {
+    display: flex;
+    gap: 8px;
+    border-right: solid 1px var(--font);
+    padding: 1px 10px;
+    min-width: 92px;
 }
 
 
+
+.skill-img-wrapper {
+    width: 11px;
+}
+
+.skill-img-wrapper img {
+    width: 100%;
+}
 
 @media (max-width: 1130px) {
 
